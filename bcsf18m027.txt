@@ -4,7 +4,7 @@ Syed Nouman
 bcsf18m027
 
 
-repository and web page address are these :
+repository and web page address:
 
 https://github.com/NoumanShah042/git-learning
 https://noumanshah042.github.io/
