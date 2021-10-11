@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+
+  <div class="container" style="margin-top:30px">
+
+
+    <!-- <img src="C:\Users\Syed Numan Rehman\Desktop\tree.jpg" height=30% width=60%  class="mx-auto rounded img-thumbnail" alt="..."> -->
+    <!-- <img src="C:\Users\Syed Numan Rehman\Desktop\abc.png" height=40% width=80% class="rounded mx-auto d-block"   alt="..."> -->
+    <!-- <img src="C:\Users\Syed Numan Rehman\Desktop\abc.png" height=40% width=100% class="rounded mx-auto d-block"
+      alt="...">
+    <img src="" alt="This is a meme on desktop"> -->
+
+
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand m-auto" href="#">
+          Git Commands
+        </a>
+      </div>
+    </nav>
+    <br><br>
+    <h4>Here are the Git commands which are being covered:</h4>
+
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item"> git config </li>
+      <li class="list-group-item">git init</li>
+      <li class="list-group-item">git clone</li>
+      <li class="list-group-item">git status</li>
+      <li class="list-group-item">git add</li>
+      <li class="list-group-item"> git commit</li>
+      <li class="list-group-item">git diff</li>
+      <li class="list-group-item">git reset</li>
+
+    </ul>
+
+
+
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item">git rm</li>
+      <li class="list-group-item">git log</li>
+      <li class="list-group-item">git branch</li>
+      <li class="list-group-item">git checkout</li>
+      <li class="list-group-item">git merge</li>
+      <li class="list-group-item">git remote</li>
+      <li class="list-group-item">git push</li>
+      <li class="list-group-item">git pull</li>
+    </ul>
+
+
+    <br><br>
+
+    <h3>git config</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git config –global user.name <q>[name]</q> <br>
+      git config –global user.email <q>[email address]</q>
+    </div>
+    <p>This command sets the author name and email address respectively to be used with your commits.</p>
+    <img src="img/1.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br><br>
+
+    <h3>git init</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git init
+    </div>
+    <p>Create a new Git repository in the current directory.</p>
+    <img src="img/2.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br><br>
+    <h3>git clone</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git clone [url]
+    </div>
+    <p>This command is used to obtain a repository from an existing URL.</p>
+    <img src="img/21.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+
+    <br><br>
+
+    <h3>git status</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git status
+    </div>
+    <p>This command lists all the files that have to be committed.</p>
+    <img src="img/3.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+
+    <br><br>
+    <h3>git add</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git add [file]
+    </div>
+    <p>This command adds a file to the staging area.</p>
+    <img src="img/4.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git add *
+    </div>
+    <p>This command adds(stages) all new modifications, deletions, creations to the git.</p>
+    <img src="img/4_i.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+
+    <br><br>
+    <h3>git commit</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git commit -m "message"
+    </div>
+    <p>This command records or snapshots the file permanently in the version history.</p>
+    <img src="img/5.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git commit -am "message"
+    </div>
+    <p>This command adds the file in staging area and also commits changes ( work only for modified files) .</p>
+    <img src="img/8.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br><br>
+    <h3>git log</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git log
+    </div>
+    <p>This command display the version history of the current branch.</p>
+    <img src="img/6.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br><br>
+
+    <h3>git diff</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git diff
+    </div>
+    <p>This command Display the difference between the Index and the Workspace.</p>
+    <img src="img/7.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git diff --staged
+    </div>
+    <p>This command shows the differences between the files in the staging area and the latest version present in the
+      last commit.</p>
+    <img src="img/9.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+
+
+    <br><br>
+    <h3>git reset</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git reset [file]
+    </div>
+    <p>This command unstages the file, but it preserves the file contents.</p>
+    <img src="img/10.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git reset --hard
+    </div>
+    <p>Throws away all your uncommitted changes, hard reset files to HEAD</p>
+    <img src="img/11.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+
+
+    <br><br>
+    <h3>git rm</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git rm [file]
+    </div>
+    <p>This command deletes the file from your working directory and stages the deletion.</p>
+    <img src="img/12.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br><br>
+    <h3>git branch</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git branch
+    </div>
+    <p>This command lists all the local branches in the current repository.</p>
+
+    <div class="alert alert-secondary" role="alert">
+      git branch [branch name]
+    </div>
+    <p>This command creates a new branch.</p>
+    <img src="img/13.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git branch -d [branch name]
+    </div>
+    <p>This command deletes the specified branch.</p>
+    <img src="img/15.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+
+
+
+    <br><br>
+    <h3>git checkout</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git checkout [branch name]
+    </div>
+    <p>This command is used to switch from one branch to another.</p>
+    <img src="img/14.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git checkout -b [branch name]
+    </div>
+    <p>This command creates a new branch and also switches to it.</p>
+    <img src="img/16.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br><br>
+    <h3>git merge</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git merge [branch name]
+    </div>
+    <p>This command merges the specified branch to current branch.</p>
+    <img src="img/22.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br><br>
+    <h3>Create a GItHub Repository</h3>
+    <br>
+
+    <p>In the upper-right corner of any page, use the drop-down menu, and select New repository.</p>
+    <img src="img/r_1.png" height=40% width=100% class="rounded mx-auto d-block" alt="..."><br>
+    <p>Type a short, memorable name for your repository. For example, "git-learning".</p>
+    <img src="img/r_2.png" height=40% width=100% class="rounded mx-auto d-block" alt="..."><br>
+    <p>Congratulations! You've successfully created your first repository</p>
+    <img src="img/r_3.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+
+
+    <br><br>
+    <h3>git remote</h3>
+
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git remote -v
+    </div>
+    <p>This command shows the remote for pull and push</p>
+
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git remote add [variable name] [Remote Server Link]
+    </div>
+    <p>This command is used to connect your local repository to the remote server.</p>
+    <img src="img/17.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git remote
+    </div>
+    <p>This command shows the remotes.</p>
+    <img src="img/17_i.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+
+
+    <br><br>
+    <h3>git push</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git push [variable name] master
+    </div>
+    <p>This command sends the committed changes of master branch to your remote repository.</p>
+    <img src="img/18.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git push –all [variable name]
+    </div>
+    <p>This command pushes all branches to your remote repository.</p>
+    <img src="img/19.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+
+
+    <br><br>
+    <h3>git pull</h3>
+    <br>
+    <div class="alert alert-secondary" role="alert">
+      git pull [Repository Link]
+    </div>
+    <p>This command fetches and merges changes on the remote server to your working directory.</p>
+    <img src="img/20.png" height=40% width=100% class="rounded mx-auto d-block" alt="...">
+
+    <br><br>
+
+
+
+  </div>
+
+
+  <!--   Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
